@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zikar's Web</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="img-container">
+            <img src="pepega.jpg" alt="">
+        </div>
+        <h1 style="padding-left: 3dvh;">Profil Mahasiswa</h1>
+    </header>
+
+    <nav>
+        <form action="">
+            <ul>
+                <a href="" onclick="biodata()">
+                    <li>Biodata</li>
+                </a>
+                <a href="" onclick="pendidikan()">
+                    <li>Pendidikan</li>
+                </a>
+                <a href="" onclick="pengalaman()">
+                    <li>Pengalaman</li>
+                </a>
+                <a href="" onclick="keahlian()">
+                    <li>Keahlian</li>
+                </a>
+                <a href="" onclick="publikasi()">
+                    <li>Publikasi</li>
+                </a>
+            </ul>
+        </form>
+    </nav>
+
+    <section>
+        <h1 id="hdr">Biodata</h1>
+        <p id="l1"><strong>NIM:</strong> 2022071048</p>
+        <p id="l2"><strong>Nama:</strong> Zikar Nurizky</p>
+        <p id="l3"><strong>Agama:</strong> Islam</p>
+        <p id="l4"><strong>Tanggal Lahir:</strong> 17 Agustus 1945</p>
+        <p id="l5"><strong>Tempat Lahir:</strong> Tangerang </p>
+    </section>
+
+    <aside>
+        <h3>Hobi:</h3>
+        <ul>
+            <li>Gaming</li>
+            <li>Pemrograman</li>
+        </ul>
+    </aside>
+
+    <footer>
+        <section class="socmed">
+            <p>Twitter: @akun</p>
+            <p>FB: @akun</p>
+            <p>Instagram: @akun</p>
+        </section>
+
+        <section class="copyright">
+            <p>&copy; Copyright 2024. All Rights Reserved</p>
+        </section>
+
+        <section class="trademark">
+            <h3>ZIKAR's WEB</h3>   
+            <p><i>Nosce to ipsum</i></p>
+        </section>
+    </footer>
+
+    <script>
+        const pendidikan =  () => {
+            event.preventDefault();
+            var hdr = document.getElementById('hdr');
+            var l1 = document.getElementById('l1');
+            var l2 = document.getElementById('l2');
+            var l3 = document.getElementById('l3');
+            var l4 = document.getElementById('l4');
+            var l5 = document.getElementById('l5');
+            
+            hdr.innerText = 'Pendidikan';
+            l1.innerHTML = '<strong>2022 - 2026: </strong> S1 - Informatika, Universitas Pembangunan Jaya';
+            l2.innerHTML = '<strong>2019 - 2022: </strong> Paket C, PKBM Pemimpin Anak Bangsa';
+            l3.innerHTML = '';
+            l4.innerHTML = '';
+            l5.innerHTML = '';
+        }
+
+        const pengalaman = () => {
+            event.preventDefault();
+            var hdr = document.getElementById('hdr');
+            var l1 = document.getElementById('l1');
+            var l2 = document.getElementById('l2');
+            var l3 = document.getElementById('l3');
+            var l4 = document.getElementById('l4');
+            var l5 = document.getElementById('l5');
+            
+            hdr.innerText = 'Pengalaman';
+            l1.innerHTML = '<strong>Jun 2024: </strong> hackJakarta2024 - Peserta';
+            l2.innerHTML = '<strong>Jun 2024: </strong> GarudaHacks 2024 - Peserta';
+            l3.innerHTML = '<strong>Feb - Nov 2023: </strong> Ketua Pelaksana - Pekan Apresiasi YPAB 2023';
+            l4.innerHTML = '<strong>Agu 2023: </strong> ASEAN-ROK Youth Metaverse Idea Contest 2023 - 6th Place';
+            l5.innerHTML = '<strong>Jul - Agu 2023: </strong> ASEAN Seeds for the Future 2023 - Indonesian Delegates';
+        }
+
+        const keahlian = () => {
+            event.preventDefault();
+            var hdr = document.getElementById('hdr');
+            var l1 = document.getElementById('l1');
+            var l2 = document.getElementById('l2');
+            var l3 = document.getElementById('l3');
+            var l4 = document.getElementById('l4');
+            var l5 = document.getElementById('l5');
+
+            hdr.innerText = 'Keahlian';
+            l1.innerHTML = '<strong>Programming: </strong> Python, Java, C++, JavaScript';
+            l2.innerHTML = '<strong>Database: </strong> MySQL, PostgreSQL, MongoDB';
+            l3.innerHTML = '<strong>Web: </strong> HTML, CSS, Bootstrap, React, Node.js, Deno';
+            l4.innerHTML = '<strong>Mobile: </strong> React Native';
+            l5.innerHTML = '<strong>Others: </strong> Git, Docker';
+        }
+
+        const publikasi = () => {
+            event.preventDefault();
+            var hdr = document.getElementById('hdr');
+            var l1 = document.getElementById('l1');
+            var l2 = document.getElementById('l2');
+            var l3 = document.getElementById('l3');
+            var l4 = document.getElementById('l4');
+            var l5 = document.getElementById('l5');
+
+            hdr.innerText = 'Publikasi';
+            l1.innerHTML = '<strong>2022: </strong>Nurizky, Z. (2023). <i>"Mengapa Kita Cenderung Mendengarkan Lagu Galau saat Sedih?"</i>. Kumparan.';
+            l2.innerHTML = '';
+            l3.innerHTML = '';
+            l4.innerHTML = '';
+            l5.innerHTML = '';
+            
+        }
+    </script>
+</body>
+
+</html>
